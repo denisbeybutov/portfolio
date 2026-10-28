@@ -1,46 +1,211 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Denis Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Портфолио Дениса — Frontend-разработчик. Мои проекты на HTML, CSS, JavaScript, React и Next.js."
+  />
+  <title>Денис — Frontend Developer</title>
+  <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-    <div class="container">
-        <p class="text">My name is Denis</p>
-        <p class="text">I know: HTML, CSS, JS</p>
-        <p class="text">My projects</p>
-        <ul>
-            
-            <li class="project__item">
-                <a class="project__link" target="_blank" href="https://denisbeybutov.github.io/portfolio_flags/">01 Flags</a>            
-            </li>
-            <li class="project__item">
-                <a class="project__link" target="_blank" href="https://denisbeybutov.github.io/portfolio_ecommerce/">02 E-commerce shop</a>
-            </li>
-            <li class="project__item">
-                <a class="project__link" target="_blank" href="https://denisbeybutov.github.io/portfolio_todo/">03 To do list</a>
-            </li>
-            <li class="project__item">
-                <a class="project__link" target="_blank" href="https://denisbeybutov.github.io/weather/">04 Weather</a>
-            </li>
-            <li class="project__item">
-                <a class="project__link" target="_blank" href="https://denisbeybutov.github.io/portfolio_rick-morty/">05 Search Rick Morty</a>
-            </li>
-            <li class="project__item">
-                <a class="project__link" target="_blank" href="https://denisbeybutov.github.io/portfolio_kinopoisk/">06 Cinema premiers</a>
-            </li>
-            <li class="project__item">
-                <a class="project__link" target="_blank" href="https://denisbeybutov.github.io/weather_react/?utm_source=chatgpt.com">07 Weather</a>
-            </li>
+  <header class="header">
+    <a class="logo" href="#home">denis<span>.</span></a>
+    <nav class="nav">
+      <a href="#about">Обо мне</a>
+      <a href="#projects">Проекты</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+    <a class="header-link" href="https://github.com/denisbeybutov" target="_blank" rel="noreferrer">
+      GitHub ↗
+    </a>
+  </header>
 
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-content">
+        <div class="availability">
+          <span class="status-dot"></span>
+          Портфолио Frontend-разработчика
+        </div>
 
-            <li class="project__item">
-                <a class="project__link" target="_blank" href="https://next-pizza-wheat-six.vercel.app/">08 Next pizza</a>
-            </li>
-        </ul>
-    </div>    
+        <h1>Привет, я Денис.<br />
+          Создаю <span>веб-сайты</span><br />
+          и приложения.
+        </h1>
 
+        <p class="hero-description">
+          Разрабатываю современные интерфейсы, изучаю новые технологии
+          и превращаю идеи в работающие проекты.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Смотреть проекты ↓</a>
+          <a class="button button-secondary" href="https://github.com/denisbeybutov"
+             target="_blank" rel="noreferrer">Мой GitHub ↗</a>
+        </div>
+      </div>
+
+      <div class="hero-card" aria-label="Технологии разработки">
+        <div class="code-window">
+          <div class="window-dots"><i></i><i></i><i></i></div>
+          <pre><span class="code-purple">const</span> developer = {
+  name: <span class="code-green">"Denis"</span>,
+  role: <span class="code-green">"Frontend Developer"</span>,
+  skills: [
+    <span class="code-green">"HTML"</span>,
+    <span class="code-green">"CSS"</span>,
+    <span class="code-green">"JavaScript"</span>,
+    <span class="code-green">"React"</span>,
+    <span class="code-green">"Next.js"</span>
+  ],
+  <span class="code-blue">learning</span>: <span class="code-purple">true</span>
+};</pre>
+        </div>
+        <div class="hero-card-footer">
+          <span class="status-dot"></span>
+          <span>Всегда учусь чему-то новому</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="section-heading">
+        <span class="eyebrow">01 / ОБО МНЕ</span>
+        <h2>Немного обо мне</h2>
+      </div>
+      <div class="about-content">
+        <p>
+          Я Денис, начинающий Frontend-разработчик. Мне нравится создавать
+          понятные и удобные интерфейсы, работать с API и делать сайты,
+          которыми действительно приятно пользоваться.
+        </p>
+        <p>
+          Каждый проект для меня — возможность закрепить знания,
+          разобраться в новой технологии и стать лучше в разработке.
+        </p>
+        <div class="skills">
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>JavaScript</span>
+          <span>React</span>
+          <span>Next.js</span>
+          <span>TypeScript</span>
+          <span>Git</span>
+          <span>REST API</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects">
+      <div class="section-heading projects-heading">
+        <div>
+          <span class="eyebrow">02 / МОИ РАБОТЫ</span>
+          <h2>Изучай мои проекты<span>.</span></h2>
+        </div>
+        <p>От первых HTML-страниц до приложений на React и Next.js.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-visual visual-flags"><span>🌍</span><small>01</small></div>
+          <div class="project-info">
+            <div class="project-meta"><span>HTML · CSS</span><span>01</span></div>
+            <h3>Flags of the world</h3>
+            <p>Коллекция флагов разных стран с акцентом на вёрстку и стилизацию.</p>
+            <a class="project-link" href="https://denisbeybutov.github.io/portfolio_flags/" target="_blank" rel="noreferrer">Открыть проект ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual visual-shop"><span>🛍️</span><small>02</small></div>
+          <div class="project-info">
+            <div class="project-meta"><span>HTML · CSS · JS</span><span>02</span></div>
+            <h3>E-commerce shop</h3>
+            <p>Концепция интернет-магазина с интерфейсом для просмотра товаров.</p>
+            <a class="project-link" href="https://denisbeybutov.github.io/portfolio_ecommerce/" target="_blank" rel="noreferrer">Открыть проект ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual visual-todo"><span>✓</span><small>03</small></div>
+          <div class="project-info">
+            <div class="project-meta"><span>JavaScript · CSS</span><span>03</span></div>
+            <h3>To-do list</h3>
+            <p>Список задач для организации дел и практики интерактивного интерфейса.</p>
+            <a class="project-link" href="https://denisbeybutov.github.io/portfolio_todo/" target="_blank" rel="noreferrer">Открыть проект ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual visual-weather"><span>☀️</span><small>04</small></div>
+          <div class="project-info">
+            <div class="project-meta"><span>JavaScript · API</span><span>04</span></div>
+            <h3>Weather forecast</h3>
+            <p>Приложение прогноза погоды с получением данных через API.</p>
+            <a class="project-link" href="https://denisbeybutov.github.io/weather/" target="_blank" rel="noreferrer">Открыть проект ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual visual-rick"><span>🛸</span><small>05</small></div>
+          <div class="project-info">
+            <div class="project-meta"><span>JavaScript · API</span><span>05</span></div>
+            <h3>Rick and Morty</h3>
+            <p>Поиск и просмотр персонажей по данным внешнего API.</p>
+            <a class="project-link" href="https://denisbeybutov.github.io/portfolio_rick-morty/" target="_blank" rel="noreferrer">Открыть проект ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual visual-cinema"><span>🎬</span><small>06</small></div>
+          <div class="project-info">
+            <div class="project-meta"><span>JavaScript · API</span><span>06</span></div>
+            <h3>Cinema premieres</h3>
+            <p>Страница с фильмами и кинопремьерами в формате онлайн-каталога.</p>
+            <a class="project-link" href="https://denisbeybutov.github.io/portfolio_kinopoisk/" target="_blank" rel="noreferrer">Открыть проект ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual visual-react"><span>🌦️</span><small>07</small></div>
+          <div class="project-info">
+            <div class="project-meta"><span>React · JavaScript</span><span>07</span></div>
+            <h3>Weather React</h3>
+            <p>Приложение погоды на React для практики компонентов и работы с данными.</p>
+            <a class="project-link" href="https://denisbeybutov.github.io/weather_react/" target="_blank" rel="noreferrer">Открыть проект ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card project-featured">
+          <div class="project-visual visual-pizza"><span>🍕</span><small>08</small></div>
+          <div class="project-info">
+            <div class="project-meta"><span>Next.js · TypeScript</span><span>08</span></div>
+            <h3>Next Pizza</h3>
+            <p>Веб-приложение для пиццерии с каталогом и пользовательским интерфейсом оформления заказа.</p>
+            <a class="project-link" href="https://next-pizza-wheat-six.vercel.app/" target="_blank" rel="noreferrer">Открыть проект ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <span class="eyebrow">03 / КОНТАКТЫ</span>
+      <h2>Есть интересный проект?</h2>
+      <p>Буду рад новым знакомствам, идеям и возможностям развиваться.</p>
+      <a class="button button-primary" href="https://github.com/denisbeybutov" target="_blank" rel="noreferrer">
+        Написать мне через GitHub ↗
+      </a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo" href="#home">denis<span>.</span></a>
+    <p>Сделано с интересом к разработке © 2026</p>
+    <a href="https://github.com/denisbeybutov" target="_blank" rel="noreferrer">GitHub ↗</a>
+  </footer>
 </body>
 </html>
