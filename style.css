@@ -48,6 +48,9 @@ button, a {
   gap: 24px;
   border-bottom: 1px solid var(--border);
   background: rgba(16, 17, 19, .92);
+  position: sticky;
+  top:0;
+  z-index: 50;
 }
 
 .logo {
